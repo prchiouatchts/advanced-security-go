@@ -14,7 +14,6 @@ import (
 
 func main() {
 	var err error
-
 	os.Remove("./bookstore.db")
 	models.DB, err = sql.Open("sqlite3", "./bookstore.db")
 	if err != nil {
